@@ -8,7 +8,8 @@
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="style.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,8 +26,87 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+						<h5 style="color: #004c00">Bancos de dados orientados a documentos</h5>
+						<h6>Cairo, Evandro e Ires</h6>
+				</section>
+				<section>
+					<section>
+						<h5 style="color: #004c00">O que é NoSql?</h5>
+						<p class="fragment fade-int">São padrões de armazenamentos de dados alterantivos ao SQL (modelo relacional)</p>
+					</section>
+					<section>
+						<h3>Carlo Strozzi</h3>
+						<h5>"...completamente distinto do modelo relacional e 
+							portanto deveria ser mais apropriadamente chamado "NoREL"...</h5>
+					</section>
+				</section>
+				<section>
+						<section>
+							<h6 style="color:#004c00">E o orientado a documento?</h6>
+						</section>
+						<section class="fragments">
+							<p>Tipo de banco de dados não relacional</p>
+							<p>Armazena e consulta dados como documentos JSON</p>
+							<ul class="fragments">
+								<li class="fragment">Flexível</li>
+								<ul>
+									<li class="fragment">livre de esquemas</li>
+									<li class="fragment">semiestruturado</li>
+									<li class="fragment">evoluem conforme a necessidade</li>
+								</ul> 
+							</ul>
+						</section>
+						<section>
+							<h3>Mais vantagens!</h6>
+							<h5>Melhor performance</h5>
+							<h5>Custos reduzidos</h5>
+							<h5>Velocidade para o mercado</h5>
+							<h5>Grandes volumes</h5>
+							<h5>Escalabilidade</h5>
+						</section>
+						<section>
+							<div class="fragment fade-in-then-out">
+								<h3 style="color: red;">caution</h3>
+								<h3>is not silver bullet</h3>
+							</div>
+							<div class="fragment fade-in-then-semi-out" style="margin-bottom: 200px">
+								<h3>Desvantagens</h3>
+								<h5>Grau de amadurecimento</h5>
+								<h5>Testes que o banco relacional possuem</h5>
+								<h5>Não possui padrão de linguagem</h5>
+								<h5>Transação geral (restritas a um único nó)</h5>
+							</div>
+						</section>
+					</section>
+					<section>
+						<img src="image/mongodb.jpg" alt="" style="border: none !important; box-shadow: none">
+					</section>
+					<section>
+						<section>
+							<h4>
+								O <span style="color: #004c00">MongoDB</span> é um banco de dados de código aberto, gratuito, de alta performance, sem esquemas e orientado a 
+								documentos lançado em fevereiro de 2009 pela empresa 10gen, escrito em C++
+							</h4>
+								<h6  class="fragment" style="font-size: 30px">
+									Quem usa? Globo.com, SourceForge, FourSquare, MailBox (serviço de e-mail do Dropbox), LinkedIn, SAP, MTV, 
+									Pearson Education, ...
+								</h6>
+						</section>
+						<section>
+							<img src="image/stackOverflow-DB-2019.PNG" alt="" style="border: none !important; box-shadow: none">
+						</section>
+					</section>
+					<section>
+						<p>Show me the code!!</p>
+					</section>
+					<section>
+						<h2>Obrigado!</h2>
+						<h6 class="notes">Fontes</h6>
+						<a href="https://aws.amazon.com/pt/nosql/document/">https://aws.amazon.com/pt/nosql/document/</a>
+						<a href="https://www.devmedia.com.br/introducao-ao-mongodb/30792">https://www.devmedia.com.br/introducao-ao-mongodb/30792</a>
+						<a href="https://insights.stackoverflow.com/survey/2019#most-popular-technologies">https://insights.stackoverflow.com/survey/2019#most-popular-technologies</a>
+					</section>
 			</div>
 		</div>
 

@@ -24,9 +24,14 @@ body {
   background-color: #fff;
   color: #000; }
 
+a {
+  font-size: 30px;
+}
+
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/
+
 .reveal .slides section .fragment {
   opacity: 0;
   visibility: hidden;
