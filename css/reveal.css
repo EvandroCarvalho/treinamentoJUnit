@@ -1601,3 +1601,21 @@ a {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+
+/**Customizações*************/
+
+.reveal .texto {
+  color: red;
+  font-size: 30px;
+}
+
+.reveal .textoPadrao {
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.img {
+  border: none !important; 
+  box-shadow: none"
+}
