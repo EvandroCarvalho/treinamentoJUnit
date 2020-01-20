@@ -1,129 +1,222 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/simple.css">
-		<link rel="stylesheet" href="style.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/simple.css">
+	<link rel="stylesheet" href="style.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h5 style="color:black">Testes unitários com <span style="font-family: serif;">
+						<span style="color: #004c00; font-weight: bold;">J</span><span
+							style="color: red; font-weight: bold">Unit</span></span>
+			</section>
+			<section>
+				<h5 style="color: #004c00; margin-top: 50px;">Sobre Evandro</h5>
 				<section>
-						<h5 style="color: #004c00">Bancos de dados orientados a documentos</h5>
-						<h6>Cairo, Evandro e Ires</h6>
+					<div class="texto">
+						<p>Atuo nos projetos do Itau</p>
+						<p>IN100</p>
+						<p>PDV</p>
+						<p>Controlaí</p>
+						<p>Squad Esteira II</p>
+					</div>
 				</section>
 				<section>
-					<section>
-						<h5 style="color: #004c00">O que é NoSql?</h5>
-						<p class="fragment fade-int">São padrões de armazenamentos de dados alterantivos ao SQL (modelo relacional)</p>
-					</section>
-					<section>
-						<h3>Carlo Strozzi</h3>
-						<h5>"...completamente distinto do modelo relacional e 
-							portanto deveria ser mais apropriadamente chamado "NoREL"...</h5>
-					</section>
+					<div class="texto">
+						<p>Java</p>
+						<p>Maven, Gradle</p>
+						<p>Spring MVC, data JPA, Batch, actuator, boot</p>
+						<p>SQL Server, MySql, MariaDB, Postgresql</p>
+						<p>MongoDB, Cassandra, Redis</p>
+						<p>APM, new relic, appDynamic, Prometheus</p>
+						<p>Camel, Kafka, git, JUnit</p>
+					</div>
+				</section>
+			</section>
+			<section>
+				<h6 style="color:#004c00">Testes unitários</h6>
+				<h6>O que é ?</h6>
+				<h6>Por quê ?</h6>
+				<h6>Como ?</h6>
+			</section>
+			<section>
+				<h5>Teste unitário</h5>
+				<h5>
+					É um nível de teste, em que a unidade e comportamentos individuais são testados, tem como objetivo
+					validar que cada unidade funcione conforme projetado.
+				</h5>
+			</section>
+			<section>
+				<h5>Porquê ?</h5>
+				<div class="textoPadrao">
+					<ul>
+						<li>
+							<h5>Um código testado é mais confiável</h5>
+						</li>
+						<li>
+							<h5>Previne contra "BUG'S"</h5>
+						</li>
+						<li>
+							<h5>Permite alteração sem medo</h5>
+						</li>
+						<li>
+							<h5>Gera e preserva um "conhecimento" sobre as regras de negócios do projeto</h5>
+						</li>
+						<li>
+							<h5>Qualidade de código - S.O.L.I.D</h5>
+						</li>
+						<li>
+							<h5>...</h5>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="fragments">
+				<section>
+					<h5 class="fargment">Como ?</h5>
+					<div class="fragment .fade-in">
+						<h5>
+							<span style="font-family: serif;">
+								<span style="color: #004c00; font-weight: bold;">J</span><span
+									style="color: red; font-weight: bold">Unit</span></span>
+						</h5>
+						<h5>
+							"É um framework que facilita o desenvolvimento e execução de testes unitários em um código java"
+						</h5>
+					</div>
 				</section>
 				<section>
-						<section>
-							<h6 style="color:#004c00">E o orientado a documento?</h6>
-						</section>
-						<section class="fragments">
-							<p>Tipo de banco de dados não relacional</p>
-							<p>Armazena e consulta dados como documentos JSON</p>
-							<ul class="fragments">
-								<li class="fragment">Flexível</li>
-								<ul>
-									<li class="fragment">livre de esquemas</li>
-									<li class="fragment">semiestruturado</li>
-									<li class="fragment">evoluem conforme a necessidade</li>
-								</ul> 
-							</ul>
-						</section>
-						<section>
-							<h3>Mais vantagens!</h6>
-							<h5>Melhor performance</h5>
-							<h5>Custos reduzidos</h5>
-							<h5>Velocidade para o mercado</h5>
-							<h5>Grandes volumes</h5>
-							<h5>Escalabilidade</h5>
-						</section>
-						<section>
-							<div class="fragment fade-in-then-out">
-								<h3 style="color: red;">caution</h3>
-								<h3>is not silver bullet</h3>
-							</div>
-							<div class="fragment fade-in-then-semi-out" style="margin-bottom: 200px">
-								<h3>Desvantagens</h3>
-								<h5>Grau de amadurecimento</h5>
-								<h5>Testes que o banco relacional possuem</h5>
-								<h5>Não possui padrão de linguagem</h5>
-								<h5>Transação geral (restritas a um único nó)</h5>
-							</div>
-						</section>
-					</section>
-					<section>
-						<img src="image/mongodb.jpg" alt="" style="border: none !important; box-shadow: none">
-					</section>
-					<section>
-						<section>
-							<h4>
-								O <span style="color: #004c00">MongoDB</span> é um banco de dados de código aberto, gratuito, de alta performance, sem esquemas e orientado a 
-								documentos lançado em fevereiro de 2009 pela empresa 10gen, escrito em C++
-							</h4>
-								<h6  class="fragment" style="font-size: 30px">
-									Quem usa? Globo.com, SourceForge, FourSquare, MailBox (serviço de e-mail do Dropbox), LinkedIn, SAP, MTV, 
-									Pearson Education, ...
-								</h6>
-						</section>
-						<section>
-							<img src="image/stackOverflow-DB-2019.PNG" alt="" style="border: none !important; box-shadow: none">
-						</section>
-					</section>
-					<section>
-						<p>Show me do code!!</p>
-					</section>
-					<section>
-						<h2>Obrigado!</h2>
-						<h6 class="notes">Fontes</h6>
-						<a href="https://aws.amazon.com/pt/nosql/document/">https://aws.amazon.com/pt/nosql/document/</a>
-						<a href="https://www.devmedia.com.br/introducao-ao-mongodb/30792">https://www.devmedia.com.br/introducao-ao-mongodb/30792</a>
-						<a href="https://insights.stackoverflow.com/survey/2019#most-popular-technologies">https://insights.stackoverflow.com/survey/2019#most-popular-technologies</a>
-					</section>
-			</div>
+					<h5>Vantagens</h5>
+					<ul class="textoPadrao">
+						<li>
+							<h5>Verifica se cada unidade esta funcionando da forma esperada</h5>
+						</li>
+						<li>
+							<h5>Facilita a criação, execução automática e apresentação dos resultados</h5>
+						</li>
+						<li>
+							<h5>É free</h5>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h5>Desvantagens</h5>
+					<ul class="textoPadrao">
+						<li>
+							<h5>Métodos privados, estáticos e variáveis locais não podem ser testados</h5>
+						</li>
+						<li>
+							<h5>
+								Nem todos os erros podem ser detectados pois os módulos são testados separadamente e
+								posteriormente diferentes erros de integração podem aparecer</h5>
+						</li>
+						<li>
+							<h5>Não gera relátorio HTML</h5>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h5>xUnit</h5>
+					<img class="img" src="image/xunit.PNG" alt="book xUnit Test Patterns">
+				</section>
+			</section>
+			<section>
+				<h5>Princípios de um teste unitário (F.I.R.S.T)</h5>
+				<div class="textoPadrao">
+					<ul>
+						<li><h5><u>F</u>ast - Um teste unitário deve ser executado rápido</h5></li>
+						<li><h5><u>I</u>ndepentent - Não deve depender de outro, podendo rodar em qualquer ordem</h5></li>
+						<li><h5><u>R</u>epeatable - Pode ser executado quantas vezes quiser, mas trazendo o mesmo resultado</h5></li>
+						<li><h5><u>S</u>elf-Verifying - Auto verificavel, saber quando a execução foi correta e quando falhou</h5></li>
+						<li><h5><u>T</u>imely - Deve ser criado no momento correto</h5></li>
+					</ul>
+
+				</div>
+			</section>
+			<section>
+				<h5>
+					Alguns macetes:
+				</h5>
+				<ul class="textoPadrao">
+					<li><h5>Comece pelos mais simples</h5></li>
+					<li><h5>Use apenas dados sufiicentes (não testes 10 condições se três forem sufiicentes)</h5></li>
+					<li><h5>Achou um bug? Não conserte sem antes escrever um teste que pegue</h5></li>
+				</ul>
+			</section>
+			<section>
+				<h5>Incluindo como dependência</h5>
+				<img class="img" src="image/junit-maven.PNG"> 
+			</section>
+			<section>
+				<h5>Assertivas</h5>
+				<div class="textoPadrao">
+					<h5>Assert.assertTrue(boolean)</h5>
+					<h5>Assert.assertFalse(boolean)</h5>
+					<h5>Assert.assertEquals(expected, actual)</h5>
+					<h5>Assert.assertEquals(expected, actual, delta)</h5>
+					<h6>Assert.assertSame(obj, obj)</h6>
+					<h6>Assert.assertNotSame(obj, obj)</h6>
+				</div>
+			</section>
+			<section>
+				<h5>assertThat</h5>
+				<div class="textoPadrao">
+					<h5>Assert.assertThat(atual, Matcher)</h5>
+					<h6 style="font-size: 25px">
+						CoreMathers - Hamcrest matchers
+					</h6>
+				</div>
+			</section>
+			<section>
+				<h2>Obrigado!</h2>
+				<h6 class="notes">Fontes</h6>
+				<a href="https://aws.amazon.com/pt/nosql/document/">https://aws.amazon.com/pt/nosql/document/</a>
+				<a
+					href="https://www.devmedia.com.br/introducao-ao-mongodb/30792">https://www.devmedia.com.br/introducao-ao-mongodb/30792</a>
+				<a
+					href="https://insights.stackoverflow.com/survey/2019#most-popular-technologies">https://insights.stackoverflow.com/survey/2019#most-popular-technologies</a>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
 </html>
