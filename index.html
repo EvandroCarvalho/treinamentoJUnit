@@ -27,6 +27,7 @@
 
 <body>
 	<div class="reveal">
+		<img src="image/layout_everis.PNG" alt="" height="100%" width="100%" style="opacity: 0.2">
 		<div class="slides">
 			<section>
 				<h5 style="color:black">Testes unitários com <span style="font-family: serif;">
@@ -134,7 +135,7 @@
 								posteriormente diferentes erros de integração podem aparecer</h5>
 						</li>
 						<li>
-							<h5>Não gera relátorio HTML</h5>
+							<h5>Não gera relátorio</h5>
 						</li>
 					</ul>
 				</section>
@@ -147,11 +148,21 @@
 				<h5>Princípios de um teste unitário (F.I.R.S.T)</h5>
 				<div class="textoPadrao">
 					<ul>
-						<li><h5><u>F</u>ast - Um teste unitário deve ser executado rápido</h5></li>
-						<li><h5><u>I</u>ndepentent - Não deve depender de outro, podendo rodar em qualquer ordem</h5></li>
-						<li><h5><u>R</u>epeatable - Pode ser executado quantas vezes quiser, mas trazendo o mesmo resultado</h5></li>
-						<li><h5><u>S</u>elf-Verifying - Auto verificavel, saber quando a execução foi correta e quando falhou</h5></li>
-						<li><h5><u>T</u>imely - Deve ser criado no momento correto</h5></li>
+						<li>
+							<h5><u>F</u>ast - Um teste unitário deve ser executado rápido</h5>
+						</li>
+						<li>
+							<h5><u>I</u>ndepentent - Não deve depender de outro, podendo rodar em qualquer ordem</h5>
+						</li>
+						<li>
+							<h5><u>R</u>epeatable - Pode ser executado quantas vezes quiser, mas trazendo o mesmo resultado</h5>
+						</li>
+						<li>
+							<h5><u>S</u>elf-Verifying - Auto verificável, saber quando a execução foi correta e quando falhou</h5>
+						</li>
+						<li>
+							<h5><u>T</u>imely - Deve ser criado no momento correto</h5>
+						</li>
 					</ul>
 
 				</div>
@@ -161,14 +172,20 @@
 					Alguns macetes:
 				</h5>
 				<ul class="textoPadrao">
-					<li><h5>Comece pelos mais simples</h5></li>
-					<li><h5>Use apenas dados sufiicentes (não testes 10 condições se três forem sufiicentes)</h5></li>
-					<li><h5>Achou um bug? Não conserte sem antes escrever um teste que pegue</h5></li>
+					<li>
+						<h5>Comece pelos mais simples</h5>
+					</li>
+					<li>
+						<h5>Use apenas dados suficientes (não testes 10 condições se três forem suficientes)</h5>
+					</li>
+					<li>
+						<h5>Achou um bug? Não conserte sem antes escrever um teste que pegue</h5>
+					</li>
 				</ul>
 			</section>
 			<section>
 				<h5>Incluindo como dependência</h5>
-				<img class="img" src="image/junit-maven.PNG"> 
+				<img class="img" src="image/junit-maven.PNG">
 			</section>
 			<section>
 				<h5>Assertivas</h5>
@@ -191,13 +208,21 @@
 				</div>
 			</section>
 			<section>
+				<h5>Tratamento de erros (falha x erro)</h5>
+				<div class="textoPadrao">
+					<h5>@Test(expected = Exception.class)</h5>
+					<h5>Assert.fail("erro")</h5>
+					<h5>ExpectedException</h5>
+				</div>
+			</section>
+			<section>
+				<h5>@Before</h5>
+				<h5>@BeforeClass</h5>
+				<h5>@After</h5>
+				<h5>@AfterClass</h5>
+			</section>
+			<section>
 				<h2>Obrigado!</h2>
-				<h6 class="notes">Fontes</h6>
-				<a href="https://aws.amazon.com/pt/nosql/document/">https://aws.amazon.com/pt/nosql/document/</a>
-				<a
-					href="https://www.devmedia.com.br/introducao-ao-mongodb/30792">https://www.devmedia.com.br/introducao-ao-mongodb/30792</a>
-				<a
-					href="https://insights.stackoverflow.com/survey/2019#most-popular-technologies">https://insights.stackoverflow.com/survey/2019#most-popular-technologies</a>
 			</section>
 		</div>
 	</div>
