@@ -27,7 +27,6 @@
 
 <body>
 	<div class="reveal">
-		<img src="image/layout_everis.PNG" alt="" height="100%" width="100%" style="opacity: 0.2">
 		<div class="slides">
 			<section>
 				<h5 style="color:black">Testes unitários com <span style="font-family: serif;">
@@ -135,7 +134,7 @@
 								posteriormente diferentes erros de integração podem aparecer</h5>
 						</li>
 						<li>
-							<h5>Não gera relátorio</h5>
+							<h5>Não gera relátorio HTML</h5>
 						</li>
 					</ul>
 				</section>
@@ -158,7 +157,7 @@
 							<h5><u>R</u>epeatable - Pode ser executado quantas vezes quiser, mas trazendo o mesmo resultado</h5>
 						</li>
 						<li>
-							<h5><u>S</u>elf-Verifying - Auto verificável, saber quando a execução foi correta e quando falhou</h5>
+							<h5><u>S</u>elf-Verifying - Auto verificavel, saber quando a execução foi correta e quando falhou</h5>
 						</li>
 						<li>
 							<h5><u>T</u>imely - Deve ser criado no momento correto</h5>
@@ -176,7 +175,7 @@
 						<h5>Comece pelos mais simples</h5>
 					</li>
 					<li>
-						<h5>Use apenas dados suficientes (não testes 10 condições se três forem suficientes)</h5>
+						<h5>Use apenas dados sufiicentes (não testes 10 condições se três forem sufiicentes)</h5>
 					</li>
 					<li>
 						<h5>Achou um bug? Não conserte sem antes escrever um teste que pegue</h5>
@@ -189,43 +188,79 @@
 			</section>
 			<section>
 				<h5>Assertivas</h5>
-				<div class="textoPadrao">
-					<h5>Assert.assertTrue(boolean)</h5>
-					<h5>Assert.assertFalse(boolean)</h5>
-					<h5>Assert.assertEquals(expected, actual)</h5>
-					<h5>Assert.assertEquals(expected, actual, delta)</h5>
-					<h6>Assert.assertSame(obj, obj)</h6>
-					<h6>Assert.assertNotSame(obj, obj)</h6>
-				</div>
+				<pre>
+					<h5>
+						Assert.assertTrue(boolean)
+
+						Assert.assertFalse(boolean)
+
+						Assert.assertEquals(expected, actual)
+
+						Assert.assertEquals(expected, actual, delta)
+
+						Assert.assertSame(obj, obj)
+
+						Assert.assertNotSame(obj, obj)
+					</h5>
+				</pre>
 			</section>
 			<section>
 				<h5>assertThat</h5>
-				<div class="textoPadrao">
-					<h5>Assert.assertThat(atual, Matcher)</h5>
-					<h6 style="font-size: 25px">
+				<pre>
+					<h5>
+						Assert.assertThat(atual, Matcher)
 						CoreMathers - Hamcrest matchers
-					</h6>
-				</div>
+					</h5>
+				</pre>
 			</section>
 			<section>
 				<h5>Tratamento de erros (falha x erro)</h5>
-				<div class="textoPadrao">
-					<h5>@Test(expected = Exception.class)</h5>
-					<h5>Assert.fail("erro")</h5>
-					<h5>ExpectedException</h5>
-				</div>
+				<pre>
+					<h5>
+						@Test(expected = Exception.class)
+
+						Assert.fail("erro")
+
+						ExpectedException
+					</h5>
+				</pre>
 			</section>
 			<section>
-				<h5>@Before</h5>
-				<h5>@BeforeClass</h5>
-				<h5>@After</h5>
-				<h5>@AfterClass</h5>
+				<h5>Before/After</h5>
+				<pre>
+					<h5>
+						@Before
+						@BeforeClass
+						@After
+						@AfterClass
+					</h5>
+				</pre>
 			</section>
 			<section>
 				<h5>Ignorando testes</h5>
 				<div>
-					<h5>@Ignore</h5>
-					<h5>Assume</h5>
+					<pre>
+						<h5>
+							@Ignore
+							Assume
+					</h5>
+					</pre>
+				</div>
+			</section>
+			<section>
+				<h5>Suíte de tests</h5>
+				<div>
+					<pre>
+						<h5 style="justify-content: left;">
+							@RunWith(Suite.class) 
+							@SuiteClasses({
+								Test0.class,
+								Test1.class,
+								.....
+							})
+						</h5>
+					</pre>
+
 				</div>
 			</section>
 			<section>
@@ -250,5 +285,4 @@
 		});
 	</script>
 </body>
-
 </html>
