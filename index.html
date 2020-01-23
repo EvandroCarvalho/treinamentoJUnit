@@ -1,5 +1,5 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -261,7 +261,135 @@
 							})
 						</h5>
 					</pre>
-
+				</div>
+			</section>
+			<section>
+				<h5>Análise de cobertura</h5>
+			</section>
+			<section>
+				<ul>
+					<li>
+						<h5>É a porcentagem de código coberta por testes automatizados.</h5>
+					</li>
+					<li>
+						<h5>Faz parte de um ciclo de feedback no processo de desenvolvimento.</h5>
+					</li>
+					<li>
+						<h5>Determina quais instruções forma executadas.</h5>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h5>Por quê ?</h5>
+				<ul>
+					<li>
+						<h5>Melhora a qualidade e previsibilidade do software.</h5>
+					</li>
+					<li>
+						<h5>Saber como nossos testes realmente testaram o código.</h5>
+					</li>
+					<li>
+						<h5>Saber se os testes são suficentes.</h5>
+					</li>
+					<li>
+						<h5>Manter a qualidade do teste durante o clico de vida de projeto.</h5>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<img src="/image/jacoco.PNG">
+			</section>
+			<section>
+				<h5>Jacoco é uma biblioteca de código aberto para Java, criada pela Eclemma.</h5>
+				<h5>Gera relatórios de cobertura de código.</h5>
+			</section>
+			<section>
+				<h5>Plugin</h5>
+				<img src="/image/pluginJacoco.PNG" />
+			</section>
+			<section>
+				<h5>target/site/jacoco/index.html</h5>
+				<img src="/image/coveregeReport.PNG" alt="" class="img">
+			</section>
+			<section>
+				<h5>Dependências</h5>
+				<img src="/image/dependencias.PNG" class="img">
+			</section>
+			<section class="fragments">
+				<img src="/image/mockito.PNG" alt="" class="img">
+				<h5 class="fragment .fade-in">É uma biblioteca de código aberto para java, que permite a criação, verificação e
+					stubbing simulados</h5>
+			</section>
+			<section class="fragments">
+				<div>
+					<h5>Vantagens</h5>
+					<ul>
+						<li>
+							<h5>Possibilita criar mocks de classes concretas e interfaces</h5>
+						</li>
+						<li>
+							<h5>O setup de criação de mock é simples</h5>
+						</li>
+						<li>
+							<h5>Permite a verificação por meio de matchers</h5>
+						</li>
+					</ul>
+				</div>
+				<div class="fragment .fade-in">
+					<h5>Desvantagens</h5>
+					<ul>
+						<li>
+							<h5>É necessário uso da versão 1.6 ou superior do Java</h5>
+						</li>
+						<li>
+							<h5>Não é possivel criar mocks de classes final</h5>
+						</li>
+						<li>
+							<h5>Não é possivel fazer mocks de métodos estáticos ou privados</h5>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<img src="/image/dependencia-maven.PNG" class="img" />
+			</section>
+			<section>
+				<h5>Maneiras de inicializar</h5>
+				<div style="display: grid;">
+					<img src="/image/init1.PNG" class="img">
+					<img src="/image/init2.PNG" class="img">
+					<img src="/image/init3.PNG" class="img">
+				</div>
+			</section>
+			<section>
+				<section>
+					<h5>Anotações</h5>
+					<h5>@Mock - Cria e injeta instâncias simuladas</h5>
+					<img src="/image/mock.PNG" class="img">
+				</section>
+				<section>
+					<h5>@Spy - Espiona uma instância existente</h5>
+					<img src="/image/spy.PNG" class="img">
+				</section>
+				<section>
+					<h5>@Captor - Deve ser criado uma instância de ArgumentCaptor para obter argumentos capturados</h5>
+					<img src="/image/argumentcapture.PNG" class="img">
+				</section>
+				<section>
+					<h5>@InjectMocks - Usado para injetar mocks no objeto testado</h5>
+					<img src="/image/injectmocks.PNG" class="img">
+				</section>
+			</section>
+			<section>
+				<h5>Configurar comportamentos</h5>
+				<div style="text-align: left; font-size: 30px;">
+					<h6>when(listMock.add(anyString())).thenReturn(false);</h6>
+					<h6>when(listMock.add(anyString())).thenThrow(IllegalStateException.class);</h6>
+					<h6>when(listMock.size()).thenCallRealMethod();</h6>
+					<h6>doCallRealMethod().when(myList).add(any(Integer.class), any(String.class));</h6>
+					<h6>doReturn(false).when(listMock).add(anyString());</h6>
+					<h6>doThrow(NullPointerException.class).when(listMock).clear();</h6>
+					<h6>doNothing().when(myList).add(isA(Integer.class), isA(String.class));</h6>
 				</div>
 			</section>
 			<section>
@@ -271,16 +399,16 @@
 			</section>
 			<section>
 				<h5>Dependências</h5>
-				<img src="/image/dependencia-powermock.PNG" alt="" class="img">
+				<img src="/image/dependencia-powerMock.PNG" alt="" class="img">
 			</section>
 			<section>
 				<section>
 					<h5 class="textoPadrao">É necessário preparar os caso de testes para que funcionem com o PowerMockito</h5>
 					<img src="/image/start-powerMock.PNG" alt="" class="img">
 					<h5 class="textoPadrao">Cria um mock utilizando a API do PowerMockito</h5>
-					<img src="/image/mockfinalmethod-powermock.PNG" alt="" class="img">
+					<img src="/image/mockFinalMethod-powermock.PNG" alt="" class="img">
 					<h5 class="textoPadrao">Diz para que sempre que um construtor sem argumentos for invocado o mock deverá ser retornado</h5>
-					<img src="/image/criandonovo-powermock.PNG" alt="" class="img">
+					<img src="/image/criandoNovo-powermock.PNG" alt="" class="img">
 				</section>
 				<section>
 					<h5 class="textoPadrao">Mock metodos estáticos</h5>
@@ -314,4 +442,5 @@
 		});
 	</script>
 </body>
+
 </html>
